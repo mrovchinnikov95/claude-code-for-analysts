@@ -1,0 +1,13 @@
+{
+  "_comment": "Скопируй в .mcp.json в корне проекта. Пароль НЕ хранить здесь — используй переменную окружения или обёртку с Keychain (см. checklists/agent-into-db-safely.md).",
+  "mcpServers": {
+    "dwh": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://readonly_agent@YOUR_HOST:5432/YOUR_DB"
+      ]
+    }
+  }
+}
